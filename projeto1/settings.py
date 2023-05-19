@@ -17,6 +17,22 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
+# Database
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'projet1',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,7 +47,7 @@ SECRET_KEY = 'django-insecure-0#nve58(om6u--@_nxe=wsq8ya=m*3r%xump)s(%a9+b38&v$3
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://*','https://127.0.0.1']
 
 
 # Application definition
@@ -80,20 +96,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'projeto1.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'projet1',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#     }
-# }
 
 
 # Password validation
