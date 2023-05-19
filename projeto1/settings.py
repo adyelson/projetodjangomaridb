@@ -46,8 +46,8 @@ SECRET_KEY = 'django-insecure-0#nve58(om6u--@_nxe=wsq8ya=m*3r%xump)s(%a9+b38&v$3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://*','https://127.0.0.1']
+ALLOWED_HOSTS = ['projetodjangomaridb-production.up.railway.app','127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://projetodjangomaridb-production.up.railway.app/','https://127.0.0.1']
 
 
 # Application definition
