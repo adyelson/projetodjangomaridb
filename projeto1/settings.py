@@ -11,10 +11,21 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
+
+# DATABASES = {
+#     'default': dj_database_url.config()
+# }
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'NAnneGjbsmaVKeo1mhjB',
+        'HOST': 'containers-us-west-105.railway.app',
+        'PORT': '7579',
+    }
 }
 
 # Database
