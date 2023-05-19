@@ -11,37 +11,38 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+#config auto (exemplo: postgree)
 # import dj_database_url
 
 # DATABASES = {
 #     'default': dj_database_url.config()
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'NAnneGjbsmaVKeo1mhjB',
-        'HOST': 'containers-us-west-105.railway.app',
-        'PORT': '7579',
-    }
-}
+#config online
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'railway',
+#         'USER': 'root',
+#         'PASSWORD': 'NAnneGjbsmaVKeo1mhjB',
+#         'HOST': 'containers-us-west-105.railway.app',
+#         'PORT': '7579',
+#     }
+# }
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'projet1',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'projet1',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
